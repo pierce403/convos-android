@@ -466,6 +466,104 @@ Tools → Layout Inspector → Shows Compose hierarchy
 9. **Maintain Parity**: Android should match iOS features
 10. **Have Fun**: This is a cool project!
 
+## 📋 Critical Responsibilities
+
+### Keep Documentation Updated
+
+As you work, you MUST keep these files current:
+
+1. **README.md** - Main project documentation
+   - Update "What Works Now" section as features complete
+   - Update "What Still Needs Work" section as you progress
+   - **CRITICAL**: Update the Feature Parity Status table
+   - Mark completed milestones
+   - Update progress percentage
+   - Add any new important information
+
+2. **STATUS.md** - Current state snapshot
+   - Update after each major milestone
+   - Keep file statistics current
+   - Update "What Can Be Built Right Now" section
+
+3. **TODO.md** - Task tracking
+   - Check off completed items
+   - Add new tasks as you discover them
+   - Update time estimates based on experience
+
+4. **CONVERSION_PROGRESS.md** - Phase tracking
+   - Mark phases as complete
+   - Update overall progress percentage
+
+### Track Feature Parity with iOS
+
+**IMPORTANT**: The goal is feature parity with the iOS version. You must:
+
+1. **Reference iOS Implementation**: Always check the iOS code before implementing
+   - iOS app: `Convos/` directory
+   - iOS core: `ConvosCore/Sources/ConvosCore/` directory
+
+2. **Match Behavior**: Android should work the same way as iOS
+   - Same user flows
+   - Same data structures
+   - Same business logic
+   - Same edge case handling
+
+3. **Update Parity Table**: After implementing each feature, update the table in README.md:
+   ```markdown
+   | Feature | iOS | Android | Notes |
+   |---------|-----|---------|-------|
+   | Feature Name | ✅ | ✅ | Completed! |
+   ```
+
+4. **Test Against iOS**: When possible, test the Android app alongside iOS to verify:
+   - Messages sent from Android appear correctly on iOS
+   - Messages sent from iOS appear correctly on Android
+   - Conversation state syncs properly
+   - All features work identically
+
+5. **Note Differences**: If Android must differ from iOS (platform constraints), document why:
+   - Add notes to the parity table
+   - Add comments in code explaining the difference
+   - Document in SUMMARY.md if architectural
+
+### Example: Completing a Feature
+
+When you finish implementing the conversations list:
+
+1. ✅ Test it thoroughly
+2. ✅ Update README.md:
+   ```markdown
+   ### The App Can Currently:
+   - ✅ Display list of conversations
+   - ✅ Show message previews
+   - ✅ Navigate to conversation detail
+   ```
+3. ✅ Update parity table:
+   ```markdown
+   | Conversations List | ✅ | ✅ | Complete |
+   ```
+4. ✅ Update TODO.md:
+   ```markdown
+   - [x] Create ConversationsScreen.kt
+   - [x] Create ConversationsViewModel.kt
+   ```
+5. ✅ Update progress: "Current Progress: 35% Complete"
+6. ✅ Commit with clear message
+7. ✅ Update STATUS.md with what works now
+
+### Before You Finish a Session
+
+Before ending your work session, you MUST:
+
+- [ ] Update README.md with latest status
+- [ ] Update parity table for any completed features
+- [ ] Check off completed items in TODO.md
+- [ ] Update progress percentage
+- [ ] Commit all documentation changes
+- [ ] Leave clear notes about what's next
+
+This ensures the next person (AI or human) knows exactly where to start!
+
 ## 🎓 Kotlin/Android Tips for iOS Developers
 
 ### Kotlin Equivalents
