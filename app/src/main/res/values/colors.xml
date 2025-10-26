@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="color_primary">#FF6B35</color>
+    <color name="color_secondary">#004E89</color>
+
+    <!-- Background Colors -->
+    <color name="color_background_primary">#FFFFFF</color>
+    <color name="color_background_surface">#F8F9FA</color>
+
+    <!-- Text Colors -->
+    <color name="color_text_primary">#000000</color>
+    <color name="color_text_secondary">#6C757D</color>
+
+    <!-- Notification Color -->
+    <color name="notification_color">@color/color_primary</color>
+
+    <!-- System Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
+

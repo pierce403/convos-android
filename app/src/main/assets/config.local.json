@@ -1,0 +1,17 @@
+{
+  "environment": "local",
+  "apiBaseUrl": "http://localhost:3000",
+  "packageName": "com.convos.android.local",
+  "deepLinkHost": "local.convos.org",
+  "urlScheme": "convos-local",
+  "features": {
+    "enableDebugMenu": true,
+    "enableExplodeFeature": true,
+    "maxConversationMembers": 100
+  },
+  "logging": {
+    "level": "debug",
+    "enableRemoteLogging": false
+  }
+}
+

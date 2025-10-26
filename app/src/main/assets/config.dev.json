@@ -1,0 +1,17 @@
+{
+  "environment": "dev",
+  "apiBaseUrl": "https://api.dev.convos.xyz/api/",
+  "packageName": "com.convos.android.dev",
+  "deepLinkHost": "dev.convos.org",
+  "urlScheme": "convos-dev",
+  "features": {
+    "enableDebugMenu": true,
+    "enableExplodeFeature": true,
+    "maxConversationMembers": 100
+  },
+  "logging": {
+    "level": "debug",
+    "enableRemoteLogging": true
+  }
+}
+

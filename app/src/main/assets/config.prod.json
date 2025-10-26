@@ -1,0 +1,17 @@
+{
+  "environment": "production",
+  "apiBaseUrl": "https://api.prod.convos.xyz/api/",
+  "packageName": "com.convos.android",
+  "deepLinkHost": "convos.org",
+  "urlScheme": "convos",
+  "features": {
+    "enableDebugMenu": false,
+    "enableExplodeFeature": true,
+    "maxConversationMembers": 100
+  },
+  "logging": {
+    "level": "info",
+    "enableRemoteLogging": true
+  }
+}
+
